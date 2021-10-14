@@ -1,8 +1,5 @@
-import java.security.PublicKey;
 import java.util.ArrayList;
-
 import org.joda.time.DateTime;
-import org.joda.time.LocalDate;
 
 public class Course {
 
