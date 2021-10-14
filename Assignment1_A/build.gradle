@@ -4,7 +4,7 @@ plugins {
 }
 
 group 'com.github.ChideraaN'
-version 'v1.0'
+version 'v1.1'
 
 repositories {
     mavenCentral()
