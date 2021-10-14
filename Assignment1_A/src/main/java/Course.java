@@ -1,4 +1,7 @@
+import java.security.PublicKey;
 import java.util.ArrayList;
+
+import org.joda.time.DateTime;
 import org.joda.time.LocalDate;
 
 public class Course {
@@ -6,17 +9,19 @@ public class Course {
     private String courseName;
     private ArrayList<CourseModule> associatedModules;
     private ArrayList<Student> studentsEnrolled;
-    private LocalDate startDate;
-    private LocalDate endDate;
+    private DateTime startDate;
+    private DateTime endDate;
 
     public Course(String courseName,ArrayList<CourseModule> associatedModules,ArrayList<Student> studentsEnrolled,
-                  LocalDate startDate, LocalDate endDate){
+                  DateTime startDate, DateTime endDate){
         this.associatedModules = associatedModules;
         this.courseName = courseName;
         this.endDate = endDate;
         this.startDate = startDate;
         this.studentsEnrolled = studentsEnrolled;
     }
+
+    public Course(){}
 
     public ArrayList<Student> getStudentsEnrolled() {
         return studentsEnrolled;
@@ -26,11 +31,11 @@ public class Course {
         return associatedModules;
     }
 
-    public LocalDate getEndDate() {
+    public DateTime getEndDate() {
         return endDate;
     }
 
-    public LocalDate getStartDate() {
+    public DateTime getStartDate() {
         return startDate;
     }
 

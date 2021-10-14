@@ -1,4 +1,4 @@
-import org.joda.time.LocalDate;
+import org.joda.time.DateTime;
 import org.junit.Assert;
 import org.junit.jupiter.api.Test;
 
@@ -20,7 +20,7 @@ public class JUnitTest {
         ArrayList<Course> courses = new ArrayList<>();
         ArrayList<CourseModule> studentModules = new ArrayList<>();
 
-        Course CSIT = new Course("CSIT",modules,students, LocalDate.parse("2020-01-01"),LocalDate.parse("2020-01-12"));
+        Course CSIT = new Course("CSIT",modules,students,DateTime.parse("2020-01-01") ,DateTime.parse("2020-09-01"));
         CourseModule programming = new CourseModule("Programming","CT111",students,courses);
         CourseModule systems = new CourseModule("Systems","CT112",students,courses);
         CourseModule networks = new CourseModule("Networks","CT113",students,courses);

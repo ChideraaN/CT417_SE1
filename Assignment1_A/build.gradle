@@ -21,14 +21,14 @@ test {
     useJUnitPlatform()
 }
 
-publishing {
-    publications {
-        maven(MavenPublication) {
-            groupId = 'com.github.ChideraaN'
-            artifactId = 'Assignment1_A'
-            version = 'v1.0'
-
-            from components.java
-        }
-    }
-}
+//publishing {
+//    publications {
+//        maven(MavenPublication) {
+//            groupId = 'com.github.ChideraaN'
+//            artifactId = 'Assignment1_A'
+//            version = 'v1.0'
+//
+//            from components.java
+//        }
+//    }
+//}
