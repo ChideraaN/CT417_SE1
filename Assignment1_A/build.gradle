@@ -1,6 +1,5 @@
 plugins {
-    id 'java'
-    id 'maven-publish'
+    id 'war'
 }
 
 group 'com.github.ChideraaN'
@@ -20,15 +19,3 @@ dependencies {
 test {
     useJUnitPlatform()
 }
-
-//publishing {
-//    publications {
-//        maven(MavenPublication) {
-//            groupId = 'com.github.ChideraaN'
-//            artifactId = 'Assignment1_A'
-//            version = 'v1.0'
-//
-//            from components.java
-//        }
-//    }
-//}
